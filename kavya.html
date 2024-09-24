@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        /* Simple styling for better readability */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], textarea, select {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="submit"] {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Form -->
+    <form>
+        <label for="firstname">First name:</label>
+        <input type="text" name="firstname" id="firstname" required>
+        <br>
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" id="lastname" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <label for="sex">Sex:</label>
+        <input type="radio" name="sex" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="sex" id="male" value="male">
+        <label for="male">Male</label>
+        <br><br>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="" disabled selected>Select an option</option>
+            <option value="nepal">Nepal</option>
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+        </select>
+        <br><br>
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="30" rows="4"></textarea>
+        <br><br>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter">Subscribe</label>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Form with Target Attribute -->
+    <form target="_parent">
+        <label for="first_name">Enter your first name:</label>
+        <input type="text" name="first_name" id="first_name">
+    </form>
+
+    <!-- Article Section -->
+    <article>
+        <h2>Title of Article</h2>
+        <span>Bagavatgeethai</span>
+        <p>Lorem dolor sit amet, consectetur elit.</p>
+        <figure>
+            <img src="C:/Users/kavya/OneDrive/Desktop/112.jpg" alt="Descriptive image text">
+            <figcaption>Caption</figcaption>
+        </figure>
+    </article>
+</body>
+</html>
